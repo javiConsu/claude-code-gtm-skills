@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Code GTM Stack</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --purple: #631CFF;
+    --purple-50: #F3EDFF;
+    --purple-light: #E0D2FF;
+    --cyan: #1B97D2;
+    --cyan-light: #E1F4FB;
+    --lime-bright: #D0F500;
+    --white-lilac: #FCFAFF;
+    --neutral-200: #E5E5E5;
+    --neutral-500: #737373;
+    --neutral-600: #525252;
+    --neutral-800: #262626;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background: var(--white-lilac);
+    color: var(--neutral-800);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(99, 28, 255, 0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .diagram-wrapper {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .diagram-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--purple);
+    margin-bottom: 8px;
+  }
+
+  .diagram-subtitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--neutral-800);
+    margin-bottom: 48px;
+  }
+
+  .diagram {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+  }
+
+  .lines {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .center-node {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--purple);
+    color: white;
+    border-radius: 16px;
+    padding: 20px 28px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 8px 32px rgba(99, 28, 255, 0.3);
+    min-width: 160px;
+  }
+
+  .center-node .label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 4px;
+  }
+
+  .center-node .name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .center-node .sublabel {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 4px;
+  }
+
+  .mcp-ring-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(-155px);
+    background: var(--purple-50);
+    border: 1px dashed var(--purple);
+    color: var(--purple);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 100px;
+  }
+
+  .tool-node {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1.5px solid var(--neutral-200);
+    border-radius: 12px;
+    padding: 14px 18px;
+    text-align: center;
+    min-width: 130px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    z-index: 10;
+  }
+
+  .tool-node .tool-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--neutral-800);
+    margin-bottom: 4px;
+  }
+
+  .tool-node .tool-action {
+    font-size: 11px;
+    color: var(--neutral-500);
+    line-height: 1.4;
+  }
+
+  .tool-node.clay {
+    border-color: var(--cyan);
+    background: var(--cyan-light);
+  }
+
+  .tool-node.clay .tool-name {
+    color: var(--cyan);
+  }
+
+  .node-linkedin   { top: 5%;  left: 50%; }
+  .node-attio      { top: 22%; left: 82%; }
+  .node-n8n        { top: 70%; left: 82%; }
+  .node-plusvibe   { top: 90%; left: 50%; }
+  .node-clay       { top: 70%; left: 18%; }
+  .node-skills     { top: 22%; left: 18%; }
+
+  .footnote {
+    margin-top: 48px;
+    font-size: 13px;
+    color: var(--neutral-500);
+  }
+</style>
+</head>
+<body>
+<div class="diagram-wrapper">
+  <div class="diagram-title">Growth.Band · AI GTM Stack</div>
+  <div class="diagram-subtitle">Claude Code + MCPs: How the System Connects</div>
+
+  <div class="diagram">
+    <svg class="lines" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="stack-diagram-title">
+      <title id="stack-diagram-title">Hub and spoke diagram: Claude Code CLI connected to six GTM tools via MCP layer</title>
+      <line x1="350" y1="350" x2="350" y2="55"  stroke="#E0D2FF" stroke-width="2" stroke-dasharray="6,4"/>
+      <line x1="350" y1="350" x2="547" y2="165" stroke="#E0D2FF" stroke-width="2" stroke-dasharray="6,4"/>
+      <line x1="350" y1="350" x2="547" y2="475" stroke="#E0D2FF" stroke-width="2" stroke-dasharray="6,4"/>
+      <line x1="350" y1="350" x2="350" y2="620" stroke="#E0D2FF" stroke-width="2" stroke-dasharray="6,4"/>
+      <line x1="350" y1="350" x2="153" y2="475" stroke="#1B97D2" stroke-width="2" stroke-dasharray="6,4" opacity="0.5"/>
+      <line x1="350" y1="350" x2="153" y2="165" stroke="#E0D2FF" stroke-width="2" stroke-dasharray="6,4"/>
+      <circle cx="350" cy="350" r="175" fill="none" stroke="#631CFF" stroke-width="1.5" stroke-dasharray="8,6" opacity="0.2"/>
+    </svg>
+
+    <div class="center-node">
+      <div class="label">Foundation</div>
+      <div class="name">Claude Code</div>
+      <div class="sublabel">CLI · Terminal</div>
+    </div>
+
+    <div class="mcp-ring-label">MCP Layer</div>
+
+    <div class="tool-node node-linkedin">
+      <div class="tool-name">LinkedIn</div>
+      <div class="tool-action">Inbox · Messages<br>Conversations</div>
+    </div>
+
+    <div class="tool-node node-attio">
+      <div class="tool-name">Attio / HubSpot</div>
+      <div class="tool-action">Contacts · Records<br>CRM updates</div>
+    </div>
+
+    <div class="tool-node node-n8n">
+      <div class="tool-name">n8n</div>
+      <div class="tool-action">Automations<br>Plain English</div>
+    </div>
+
+    <div class="tool-node node-plusvibe">
+      <div class="tool-name">PlusVibe / Instantly</div>
+      <div class="tool-action">Campaigns · Leads<br>Campaign stats</div>
+    </div>
+
+    <div class="tool-node clay node-clay">
+      <div class="tool-name">Clay</div>
+      <div class="tool-action">Signal research<br>Enrichment</div>
+    </div>
+
+    <div class="tool-node node-skills">
+      <div class="tool-name">Skills Library</div>
+      <div class="tool-action">ICP · Signals<br>Copy · Analysis</div>
+    </div>
+  </div>
+
+  <div class="footnote">Each tool connects via MCP — Claude operates them directly, no copy-paste required.</div>
+</div>
+</body>
+</html>

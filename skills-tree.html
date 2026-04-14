@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Code GTM Skills</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --purple: #631CFF;
+    --purple-50: #F3EDFF;
+    --purple-light: #E0D2FF;
+    --cyan: #1B97D2;
+    --cyan-light: #E1F4FB;
+    --lime-bright: #D0F500;
+    --lime-bg: #F0F7CC;
+    --lime: #7A9200;
+    --white-lilac: #FCFAFF;
+    --neutral-100: #F5F5F5;
+    --neutral-200: #E5E5E5;
+    --neutral-500: #737373;
+    --neutral-600: #525252;
+    --neutral-800: #262626;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background: var(--white-lilac);
+    color: var(--neutral-800);
+    padding: 64px 48px;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(99, 28, 255, 0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .header .tag {
+    display: inline-block;
+    background: var(--purple-50);
+    border: 1px solid rgba(99, 28, 255, 0.15);
+    color: var(--purple);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--neutral-800);
+    margin-bottom: 8px;
+  }
+
+  .header p {
+    font-size: 15px;
+    color: var(--neutral-500);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .grid-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: calc(66.666% + 10px);
+    margin: 0 auto;
+  }
+
+  .skill-card {
+    background: white;
+    border: 1.5px solid var(--neutral-200);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--purple);
+  }
+
+  .skill-card.cyan::before { background: var(--cyan); }
+  .skill-card.lime::before { background: var(--lime-bright); }
+
+  .skill-number {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--purple);
+    margin-bottom: 8px;
+  }
+
+  .skill-card.cyan .skill-number { color: var(--cyan); }
+  .skill-card.lime .skill-number { color: var(--lime); }
+
+  .skill-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--neutral-800);
+    margin-bottom: 6px;
+  }
+
+  .skill-desc {
+    font-size: 13px;
+    color: var(--neutral-500);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  .example {
+    background: var(--neutral-100);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+
+  .example-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .example-row:last-child { margin-bottom: 0; }
+
+  .example-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--neutral-500);
+    min-width: 60px;
+    padding-top: 2px;
+    flex-shrink: 0;
+  }
+
+  .example-text {
+    font-size: 12px;
+    color: var(--neutral-800);
+    line-height: 1.5;
+  }
+
+  .example-text.claude {
+    color: var(--purple);
+    font-weight: 500;
+  }
+
+  .skill-card.cyan .example-text.claude { color: var(--cyan); }
+  .skill-card.lime .example-text.claude { color: var(--lime); }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="tag">Claude Code · GTM Skills</div>
+    <h1>5 Skill Categories for Outbound</h1>
+    <p>Reusable capabilities — built once, called indefinitely.</p>
+  </div>
+
+  <div class="grid">
+    <div class="skill-card">
+      <div class="skill-number">Skill 01</div>
+      <div class="skill-name">ICP Research & Validation</div>
+      <div class="skill-desc">Score any company against your ICP in seconds, not hours of manual research.</div>
+      <div class="example">
+        <div class="example-row">
+          <span class="example-label">I say</span>
+          <span class="example-text">"Validate this company against our ICP"</span>
+        </div>
+        <div class="example-row">
+          <span class="example-label">Claude</span>
+          <span class="example-text claude">Pulls site, checks team size, identifies tech stack, scores fit. Returns a one-line verdict with reasoning in under 30 seconds.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card cyan">
+      <div class="skill-number">Skill 02</div>
+      <div class="skill-name">Signal Detection</div>
+      <div class="skill-desc">Find companies with an active reason to respond right now, not just companies that match filters.</div>
+      <div class="example">
+        <div class="example-row">
+          <span class="example-label">I say</span>
+          <span class="example-text">"Find hiring signals for this week's Clay export"</span>
+        </div>
+        <div class="example-row">
+          <span class="example-label">Claude</span>
+          <span class="example-text claude">Scans Clay and LinkedIn via MCP for roles matching our criteria. Companies with active signals surface to the top. Everyone else drops to Tier 3.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-number">Skill 03</div>
+      <div class="skill-name">Copy Generation</div>
+      <div class="skill-desc">Outreach sequences adapted to the specific signal and persona. Not templates.</div>
+      <div class="example">
+        <div class="example-row">
+          <span class="example-label">I say</span>
+          <span class="example-text">"Write the sequence for this hypothesis" (ICP + signal + angle)</span>
+        </div>
+        <div class="example-row">
+          <span class="example-label">Claude</span>
+          <span class="example-text claude">Generates a 3-step sequence tied to the actual signal and persona. Not a template. Copy that references what's happening in that company right now.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-bottom">
+    <div class="skill-card lime">
+      <div class="skill-number">Skill 04</div>
+      <div class="skill-name">Campaign Architecture</div>
+      <div class="skill-desc">Set up a full campaign in your sending platform from a single instruction.</div>
+      <div class="example">
+        <div class="example-row">
+          <span class="example-label">I say</span>
+          <span class="example-text">"Set up the SDR-hiring hypothesis in PlusVibe"</span>
+        </div>
+        <div class="example-row">
+          <span class="example-label">Claude</span>
+          <span class="example-text claude">Creates the campaign, names it by hypothesis, uploads the sequence, assigns the contact list and sending schedule. Done.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-card cyan">
+      <div class="skill-number">Skill 05</div>
+      <div class="skill-name">Reply Analysis</div>
+      <div class="skill-desc">Turn a week of replies into optimization decisions without reading every response manually.</div>
+      <div class="example">
+        <div class="example-row">
+          <span class="example-label">I say</span>
+          <span class="example-text">"What came in this week?"</span>
+        </div>
+        <div class="example-row">
+          <span class="example-label">Claude</span>
+          <span class="example-text claude">Reads every reply in the inbox via MCP. Positive, negative, out of office: all categorized. Returns a summary: what worked, what didn't, one suggested copy change.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
