@@ -8,54 +8,64 @@ Fill it in once. Update it when your understanding of the market evolves.
 ## Company Profile
 
 **Industry / Vertical:**
-<!-- e.g. SaaS, eCommerce, Fintech, Professional Services -->
+SaaS, eCommerce, marketplaces, servicios digitales, consultoras boutique, infoproductos
 
 **Company size (headcount):**
-<!-- e.g. 10-100 employees -->
+1–50 empleados (sweet spot: 1–15)
 
 **Geography:**
-<!-- e.g. Spain, Western Europe, LATAM -->
+España (prioritario), LATAM hispanohablante (secundario)
 
 **Stage:**
-<!-- e.g. Pre-seed to Series A, bootstrapped, growing -->
+Pre-revenue a €50K MRR. Bootstrapped o pre-seed. Sin equipo de ventas/marketing dedicado.
 
 **Tech signals (what tools they use that indicate fit):**
-<!-- e.g. HubSpot, Pipedrive, Notion, Slack — indicates they invest in tooling -->
+Notion, Slack, HubSpot free, Mailchimp, Typeform, Stripe — señales de que invierten en herramientas pero sin stack de ventas avanzado
 
 **EXCLUDE:**
-<!-- e.g. Enterprise (500+ employees), agencies, non-profits, government -->
+Empresas >100 empleados (enterprise), agencias de marketing, consultoras grandes, sector público, ONG, empresas con equipo de ventas ya estructurado (>3 SDRs)
 
 ---
 
 ## Buyer Profile
 
 **Primary title:**
-<!-- e.g. Founder, CEO, Head of Growth -->
+Founder, CEO, Co-founder — persona no técnica que lleva el negocio sola o con equipo pequeño
 
 **What they care about:**
-<!-- e.g. growing revenue without hiring a full sales team -->
+Conseguir más clientes sin contratar un equipo de ventas. Escalar outbound sin saber programar ni depender de herramientas complejas como Clay.
 
 **What triggers a purchase:**
-<!-- e.g. just hit first 10 customers and want to scale outbound -->
+- Quiere crecer pero no sabe cómo encontrar leads de forma sistemática
+- Ha probado outbound manualmente y es insostenible
+- Acaba de validar producto y quiere escalar la adquisición
+- Ha visto cómo un competidor crece rápido y quiere hacer lo mismo
 
 **What makes them say no:**
-<!-- e.g. requires technical setup, needs a dedicated ops person to run it -->
+- Requiere configuración técnica compleja
+- Necesita integraciones con CRM que aún no usa
+- Precio percibido como herramienta "para empresas grandes"
 
 ---
 
 ## Our Product
 
 **What we sell:**
-<!-- e.g. GTM automation platform — signal detection, ICP analysis, outreach — powered by Apify + AI -->
+Plataforma de automatización GTM — detección de señales de compra, análisis de ICP y diseño de estrategia de salida al mercado — powered by Apify + AI. No requiere conocimientos técnicos.
 
 **Price point:**
-<!-- e.g. Free tier + paid from €29/mes -->
+Free tier (créditos limitados) + Starter €29/mes + Growth €79/mes
 
 **Why we win:**
-<!-- e.g. Non-technical founders can run outbound in minutes, not months -->
+- No técnico puede lanzar outbound en minutos, no meses
+- Sin Clay, sin LinkedIn Sales Navigator, sin stack complejo
+- Pre-built playbooks listos para usar — no hay blank slate
+- Sistema de créditos: cuanto más interactúas, más créditos ganas
 
 **Why we lose:**
-<!-- e.g. No CRM sync yet, no LinkedIn direct integration -->
+- Sin CRM sync nativo todavía
+- Sin integración directa con LinkedIn (depende de Apify scraping)
+- Usuarios muy técnicos prefieren construirlo ellos mismos con Clay
 
 ---
 
