@@ -28,7 +28,9 @@ Esta skill identifica tu perfil y activa las señales que tienen sentido para lo
 
 ## Paso 1 — Lee el contexto
 
-Lee `00-icp-definition/ICP.md`. Extrae:
+**Si te llama el skill `arranque`:** usa el contexto que ya recopiló (qué vende, a quién, precio). No releas archivos ni hagas preguntas. Pasa directamente al Paso 2.
+
+**Si te ejecuta el usuario directamente:** lee `00-icp-definition/ICP.md`. Extrae:
 - Qué vende el usuario
 - A quién le vende
 - Cuánto cobra (para calibrar tamaño de cliente)

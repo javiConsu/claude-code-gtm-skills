@@ -213,19 +213,43 @@ Asunto: [asunto directo, sin clickbait]
 
 ---
 
-### Próximos pasos
+### Activación de señales — Paso final automático
+
+Después de presentar el primer mensaje, di:
+
+> "Un último paso. Con todo lo que me has contado, voy a activar las señales exactas para lo que tú vendes."
+
+Luego ejecuta el skill `detecta-perfil` **usando el contexto ya recopilado** — no hagas nuevas preguntas.
+Pasa directamente al Paso 2 de `detecta-perfil` (clasificación automática), ya tienes toda la información.
+
+El resultado de `detecta-perfil` se presenta al usuario como el cierre natural del arranque:
 
 ```
-✅ Análisis inicial completado
-📁 Tu perfil de cliente guardado en ICP.md
+---
+Tu perfil: [NOMBRE EN ESPAÑOL]
 
-Ahora puedes:
-→ Ejecutar "Encuentra personas que cambiaron de trabajo" para contactos cálidos
-→ Ejecutar "Busca empresas contratando en tu sector" para señales de compra
-→ Ejecutar "Encuentra quién se queja de tu problema en comunidades" para leads templados
+Las señales que mejor funcionan para lo que tú vendes:
 
-Cuanto más uses y más feedback nos des, más créditos tienes para seguir.
+🔥 La más importante: [señal estrella en lenguaje normal]
+   Ejemplo real: [ejemplo concreto aplicado a su producto/servicio]
+   Cómo usarla: escribe "[frase trigger en español]"
+
+🔥 Segunda señal: [señal 2 en lenguaje normal]
+   Ejemplo real: [ejemplo concreto]
+   Cómo usarla: escribe "[frase trigger en español]"
+
+🔥 Tercera señal: [señal 3 en lenguaje normal]
+   Ejemplo real: [ejemplo concreto]
+   Cómo usarla: escribe "[frase trigger en español]"
+
+---
+✅ Análisis completado. Tu perfil guardado.
+
+¿Empezamos a buscar quién necesita lo que tú vendes ahora mismo?
+Escribe "sí" y buscamos tus primeros clientes.
 ```
+
+Guarda el perfil en `00-icp-definition/PERFIL.md` antes de mostrar este output.
 
 ---
 
