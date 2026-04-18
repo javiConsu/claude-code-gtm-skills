@@ -20,7 +20,7 @@ export default function OnboardingPage() {
     <div className="h-screen flex flex-col">
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-3 border-b bg-white">
-        <span className="font-bold">WoterClip</span>
+        <span className="font-bold">Radar</span>
         <div className="flex items-center gap-4">
           <CreditsWidget credits={credits} />
           <span className="text-xs text-gray-400">Onboarding</span>

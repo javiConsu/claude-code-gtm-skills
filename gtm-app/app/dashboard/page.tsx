@@ -40,7 +40,7 @@ export default function DashboardPage() {
     <div className="h-screen flex flex-col">
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-3 border-b bg-white">
-        <Link href="/" className="font-bold">WoterClip</Link>
+        <Link href="/" className="font-bold">Radar</Link>
         <div className="flex items-center gap-4">
           <CreditsWidget credits={credits} />
           {profile && (

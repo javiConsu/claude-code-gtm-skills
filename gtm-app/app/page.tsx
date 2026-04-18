@@ -5,7 +5,7 @@ export default function LandingPage() {
     <main className="min-h-screen flex flex-col">
       {/* Nav */}
       <nav className="flex items-center justify-between px-6 py-4 border-b bg-white">
-        <span className="font-bold text-lg">WoterClip</span>
+        <span className="font-bold text-lg">Radar</span>
         <Link
           href="/onboarding"
           className="bg-black text-white text-sm px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"

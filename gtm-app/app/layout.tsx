@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'WoterClip — Tu estrategia de ventas basada en señales',
+  title: 'Radar — Tu estrategia de ventas basada en señales',
   description: 'Detecta quién necesita lo que tú vendes, ahora mismo. Sin Clay, sin Sales Navigator, sin complicaciones.',
 }
 
