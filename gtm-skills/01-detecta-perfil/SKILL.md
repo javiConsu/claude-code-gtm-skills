@@ -204,10 +204,17 @@ Guarda el resultado en `00-icp-definition/PERFIL.md`:
 **Tipo:** [FUNDADOR / CONSULTOR / COPYWRITER / DESARROLLADOR / CONSULTOR VENTAS / DISEÑADOR]
 **Perfil secundario:** [si aplica]
 **Señal estrella:** [skill + keywords concretos]
+**Confianza señal estrella:** [Hipótesis / Validado / Probado] — [N clientes con este trigger]
 **Señales activas:** [lista de skills ordenadas por prioridad]
 **Keywords personalizadas:** [las que aplican a su negocio específico]
 **Actualizado:** [fecha]
 ```
+
+**Regla de confianza:** si PAST-WINS.md existe y tiene patrones, anota el nivel junto a cada señal:
+- Sin clientes previos → todas las señales son **Hipótesis** (generadas por perfil)
+- 2 clientes con mismo trigger → **Hipótesis** (respaldada por datos propios)
+- 3+ clientes → **Validado** (sobreescribe señales del perfil)
+- 5+ clientes → **Probado** (señal estrella definitiva, máxima prioridad)
 
 ---
 
@@ -224,21 +231,23 @@ Tu perfil: [NOMBRE EN ESPAÑOL]
 
 Las señales que mejor funcionan para lo que tú vendes:
 
-🔥 La más importante: [señal estrella en lenguaje normal]
+🔥 La más importante: [señal estrella en lenguaje normal]  [Hipótesis / Validado / Probado]
    Ejemplo real: [ejemplo concreto aplicado a su producto/servicio]
    Canal email → envíala a toda tu lista de empresas que encajen
    Canal LinkedIn → úsala solo en tus 10 cuentas dream (máxima personalización)
    Cómo usarla: escribe "[trigger phrase en español]"
 
-🔥 Segunda señal: [señal 2]
+🔥 Segunda señal: [señal 2]  [Hipótesis / Validado / Probado]
    Ejemplo real: [ejemplo concreto]
    Canal recomendado: [email si es señal de volumen / LinkedIn si requiere investigación manual]
    Cómo usarla: escribe "[trigger phrase en español]"
 
-🔥 Tercera señal: [señal 3]
+🔥 Tercera señal: [señal 3]  [Hipótesis / Validado / Probado]
    Ejemplo real: [ejemplo concreto]
    Canal recomendado: [email / LinkedIn]
    Cómo usarla: escribe "[trigger phrase en español]"
+
+(Si alguna señal es "Hipótesis", díselo al usuario: "Esta señal todavía no está probada — es nuestra mejor apuesta según tu perfil. Cuando la uses, cuéntame qué pasó para que podamos confirmarla.")
 
 ---
 Regla de oro: email para llegar a todos, LinkedIn para las cuentas que más te importan.

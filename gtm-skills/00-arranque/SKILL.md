@@ -210,7 +210,15 @@ Guarda esto en `00-icp-definition/ICP.md` automáticamente.
 **Señal más repetida:** [qué tenían en común los que compraron]
 ```
 
-Si PAST-WINS tiene al menos 2 clientes con un patrón claro, ese patrón **sobreescribe** las señales predeterminadas del perfil — es más fiable que cualquier heurística genérica.
+**Niveles de confianza del patrón detectado:**
+
+| Clientes con el mismo trigger | Estado | Qué hace |
+|---|---|---|
+| 1 | Anécdota | No sobreescribe nada. Guárdala como contexto. |
+| 2 | **Hipótesis** | Aplica con cautela. Marca la señal como "(hipótesis)" en el perfil. |
+| 3 o más | **Validado** | Sobreescribe las señales predeterminadas del perfil. Es más fiable que cualquier heurística genérica. |
+
+Cuando el usuario añada más resultados de campañas, actualiza el contador. A los 5+ clientes con el mismo trigger, marca la señal como **"Probado"** — es tu señal estrella definitiva.
 
 ---
 

@@ -27,6 +27,20 @@ Write a multi-step outreach sequence tied to a specific signal and persona. Not 
 - **Subject lines: under 4 words.** No clickbait, no questions.
 - LinkedIn messages under 150 characters for step 1.
 
+## Spam hard-blocks
+
+Before outputting any message, scan every word. **Auto-reject and rewrite** if any of these appear:
+
+- Exclamation marks (`!`) anywhere in body or subject
+- Em dashes (`—`) in body copy
+- Buzzwords: *revolutionize, game-changer, synergy, leverage, seamless, cutting-edge, innovative, best-in-class, robust, scalable, streamline, transform, empower, solution, excited, thrilled, passionate*
+- Questions in subject lines
+- "I hope this finds you well" or any equivalent opener
+- "I wanted to reach out" / "I'm reaching out because"
+- Any claim without evidence ("we help companies 10x their…")
+
+Flag each violation inline when reviewing step 1 variants.
+
 ## Channel strategy — the 10:1 rule
 
 Before writing, establish which channel:
@@ -41,14 +55,16 @@ If writing for both channels, **the messaging must feel like the same person** �
 
 ## Process
 
-1. Read `00-icp-definition/PAST-WINS.md` if it exists — past clients reveal the real angle.
-2. Confirm ICP, signal, and angle are clear. Ask if anything is missing.
-3. Draft **5 variants of step 1**. Different angles, same signal. Flag any spam trigger words in each.
-4. Tell the user which variant you'd send and why.
-5. Draft step 2: expand the problem implied by the signal + relevant proof/example + CTA.
-6. Draft step 3: direct ask — one question, one line.
-7. Review each step: could this be sent to a different company without changing it? If yes, rewrite.
-8. Final check: word count per step (must be under 75), subject word count (must be under 4).
+1. Read `00-icp-definition/PAST-WINS.md` if it exists — past clients reveal the real angle. If a signal appears there with 3+ clients, that's your **validated angle**: use it as the primary frame for step 1.
+2. Ask the user: **"¿Cuál es la hipótesis de esta campaña?"** — one sentence: "Creo que [perfil] necesita [solución] cuando [señal] porque [razón]." This defines the A/B test. If they can't articulate it, help them form it before writing anything.
+3. Confirm ICP, signal, and angle are clear. Ask if anything is missing.
+4. Draft **5 variants of step 1**. Different angles, same signal. Check each against the spam hard-block list. Flag violations inline.
+5. Tell the user which variant you'd send and why. Mark it as the **hypothesis to test**.
+6. Draft step 2: expand the problem implied by the signal + relevant proof/example + CTA.
+7. Draft step 3: direct ask — one question, one line.
+8. Review each step: could this be sent to a different company without changing it? If yes, rewrite.
+9. Final check: word count per step (must be under 75), subject word count (must be under 4).
+10. After outputting the sequence, add: **"Cuando lo envíes, cuéntame qué respuesta tuviste — eso mejora las siguientes campañas."** This closes the learning loop.
 
 ## Output format
 
