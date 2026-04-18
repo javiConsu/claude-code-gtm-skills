@@ -6,6 +6,7 @@ description: >
   señales de compra, sus primeros 20 leads cualificados y una secuencia lista para enviar mañana.
   Úsalo cuando alguien se registra por primera vez o escribe "empieza", "análisis inicial",
   "quiero empezar" o "arranque".
+  Guarda 4 archivos: ICP.md, OFFER.md, POSITIONING.md y PAST-WINS.md (si tiene clientes).
 ---
 
 # Arranque — Tu estrategia de ventas en 10 minutos
@@ -87,8 +88,16 @@ Esto sirve para saber si el cliente ideal tiene que ser una empresa grande o pue
 
 ---
 
-### Pregunta 6 — Qué has probado ya
+### Pregunta 6 — Clientes actuales y qué disparó la compra
 
+> "¿Tienes ya algún cliente o proyecto cerrado?"
+
+**Si dice SÍ** → pregunta esto (es la más valiosa de todas):
+> "¿De tus mejores clientes, cómo llegaste a ellos? ¿Y qué pasaba en su empresa justo antes de comprarte — qué fue lo que les hizo necesitarte en ese momento?"
+
+Escucha bien. El patrón que aparezca (ronda de financiación, cambio de directivo, nueva contratación, rebranding...) se convierte automáticamente en la señal estrella del usuario.
+
+**Si dice NO** → pregunta:
 > "¿Qué has intentado ya para conseguir clientes? ¿Qué ha funcionado y qué no?"
 
 Opciones orientativas (no obligatorias):
@@ -159,6 +168,49 @@ No encaja: [exclusiones claras]
 ```
 
 Guarda esto en `00-icp-definition/ICP.md` automáticamente.
+
+**Guarda también estos 3 archivos de contexto** (se usarán en todos los skills posteriores):
+
+`00-icp-definition/OFFER.md`:
+```
+# Tu oferta
+**Qué entregas:** [resultado concreto, no descripción de servicio]
+**En cuánto tiempo:** [plazo real]
+**Para quién funciona mejor:** [perfil exacto]
+**Para quién NO funciona:** [exclusiones honestas]
+**Precio:** [rango o precio fijo]
+**Por qué compran:** [la razón real, no el marketing]
+```
+
+`00-icp-definition/POSITIONING.md`:
+```
+# Tu posicionamiento
+**Por qué tú y no otro:** [diferenciador real]
+**Objeciones más comunes:** [y cómo las resuelves]
+**Con quién te comparan:** [competidores directos]
+**Para quién no eres la opción correcta:** [sé honesto]
+```
+
+`00-icp-definition/PAST-WINS.md` (solo si tiene clientes):
+```
+# Tus mejores clientes
+## Cliente 1
+- **Empresa/perfil:** [descripción]
+- **Cómo llegaste a él:** [canal / contexto]
+- **Qué pasaba en su empresa antes de comprarte:** [el trigger]
+- **Por qué cerró:** [la razón real]
+
+## Cliente 2
+[mismo formato]
+
+## Cliente 3
+[mismo formato]
+
+## Patrón detectado
+**Señal más repetida:** [qué tenían en común los que compraron]
+```
+
+Si PAST-WINS tiene al menos 2 clientes con un patrón claro, ese patrón **sobreescribe** las señales predeterminadas del perfil — es más fiable que cualquier heurística genérica.
 
 ---
 

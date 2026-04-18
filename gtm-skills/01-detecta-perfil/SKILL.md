@@ -215,6 +215,10 @@ Guarda el resultado en `00-icp-definition/PERFIL.md`:
 
 Sin tecnicismos. Directo. Con ejemplos concretos de SU negocio.
 
+Presenta las señales separadas por canal siguiendo la regla 10:1:
+- **Email (capa de cobertura):** toda tu lista, bajo coste por toque
+- **LinkedIn (capa de precisión):** solo el 10% top — cuentas soñadas, máximo encaje con el perfil
+
 ```
 Tu perfil: [NOMBRE EN ESPAÑOL]
 
@@ -222,17 +226,24 @@ Las señales que mejor funcionan para lo que tú vendes:
 
 🔥 La más importante: [señal estrella en lenguaje normal]
    Ejemplo real: [ejemplo concreto aplicado a su producto/servicio]
-   Cómo usarla: escribe "busca [señal]"
-
-🔥 Segunda: [señal 2]
-   Ejemplo real: [ejemplo concreto]
+   Canal email → envíala a toda tu lista de empresas que encajen
+   Canal LinkedIn → úsala solo en tus 10 cuentas dream (máxima personalización)
    Cómo usarla: escribe "[trigger phrase en español]"
 
-🔥 Tercera: [señal 3]
+🔥 Segunda señal: [señal 2]
    Ejemplo real: [ejemplo concreto]
+   Canal recomendado: [email si es señal de volumen / LinkedIn si requiere investigación manual]
+   Cómo usarla: escribe "[trigger phrase en español]"
+
+🔥 Tercera señal: [señal 3]
+   Ejemplo real: [ejemplo concreto]
+   Canal recomendado: [email / LinkedIn]
    Cómo usarla: escribe "[trigger phrase en español]"
 
 ---
+Regla de oro: email para llegar a todos, LinkedIn para las cuentas que más te importan.
+Si alguien ve tu email Y tu mensaje de LinkedIn, tiene que parecer la misma persona.
+
 ¿Quieres que busque ahora mismo quién necesita lo que tú vendes?
 Escribe "sí" y empezamos.
 ```
