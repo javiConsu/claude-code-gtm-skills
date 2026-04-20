@@ -1,0 +1,4 @@
+# Environment files with secrets — never commit
+.env.local
+.env.*.local
+gtm-app/.env.local

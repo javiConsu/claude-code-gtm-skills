@@ -14,51 +14,60 @@ Think of it like a function written in plain English. You don't write it every t
 
 ---
 
-## The 5 skills
+## The skills
 
+### Foundation (start here)
+| Skill | What it does | How to use |
+|-------|-------------|------------|
+| `icp-definition` | Persistent ICP — fill once, all skills use it | Edit `00-icp-definition/ICP.md` |
+| `gtm-orchestrator` | Full pipeline: signals → ICP validation → ready sequences | "Run full GTM pipeline" |
+
+### Signal Playbooks (Apify-powered — no Clay or LinkedIn MCP needed)
+| Skill | Signal | Strength | Trigger phrase |
+|-------|--------|----------|----------------|
+| `champion-tracker` | Contact changed jobs | 🔥🔥 | "Find champion moves this week" |
+| `funding-radar` | Companies that just raised | 🔥 | "Funding radar for [sector]" |
+| `hiring-intent` | Companies hiring roles your product replaces | 🔥 | "Find hiring intent signals" |
+| `leadership-change` | New C-level hired at target account | 🔥 | "Leadership changes at target accounts" |
+| `community-pain` | People complaining publicly about your problem | 🔥🔥 | "Mine community pain on Reddit" |
+| `competitor-signals` | Dissatisfied competitor customers | 🔥🔥 | "Monitor competitor complaints" |
+
+### Core GTM Skills (MCP-powered — requires Clay + LinkedIn)
 | Skill | What it does | Trigger phrase |
 |-------|-------------|----------------|
 | `icp-validation` | Score a company against your ICP, return a verdict | "Validate this company against our ICP" |
 | `signal-detection` | Scan a list for hiring/growth signals, return scored tiers | "Find hiring signals for this Clay export" |
-| `copy-generation` | Write a multi-step sequence tied to a specific signal and persona | "Write the sequence for this hypothesis" |
+| `copy-generation` | Write a multi-step sequence tied to a specific signal | "Write the sequence for this hypothesis" |
 | `campaign-architecture` | Set up a campaign in PlusVibe/Instantly via MCP | "Set up the SDR-hiring hypothesis in PlusVibe" |
 | `reply-analysis` | Read inbox via MCP, categorize replies, surface patterns | "What came in this week?" |
 
 ---
 
+## Quick start (no MCP required)
+
+1. Fill in your ICP: edit `gtm-skills/00-icp-definition/ICP.md`
+2. Run a signal playbook: "Find champion moves this week"
+3. Run the full pipeline: "Run full GTM pipeline — hiring intent"
+
+---
+
 ## Prerequisites
 
-1. **Claude Code CLI** installed — [docs.anthropic.com/claude-code](https://docs.anthropic.com/en/docs/claude-code/overview)
-2. **MCP connections** for the tools you use:
-   - LinkedIn MCP (for signal-detection and reply-analysis)
-   - Clay MCP (for signal-detection)
-   - PlusVibe or Instantly MCP (for campaign-architecture)
-   - Email MCP (for reply-analysis)
+**For Signal Playbooks (Apify-powered):**
+- Claude Code CLI
+- Apify account + API key
 
-You don't need all MCPs to start. Install one skill + one MCP and test it before adding more.
+**For Core GTM Skills (MCP-powered):**
+- Claude Code CLI
+- MCP connections: LinkedIn MCP, Clay MCP, PlusVibe/Instantly MCP, Email MCP
 
 ---
 
 ## How to install
 
-1. Copy the skill folder (e.g., `01-icp-validation`) to your Claude Code skills directory:
-
-```bash
-cp -r 01-icp-validation ~/.claude/skills/icp-validation
-```
-
-2. Restart Claude Code or reload the session.
-
-3. Call the skill:
-```
-"Validate Acme Corp against our ICP"
-```
-
-To install all 5 at once:
-
 ```bash
 for dir in */; do
-  skill_name=$(basename "$dir")
+  skill_name=$(echo "$dir" | sed 's/^[0-9]*-//' | tr -d '/')
   cp -r "$dir" ~/.claude/skills/"$skill_name"
 done
 ```
