@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "supercarl": {
+      "type": "http",
+      "url": "https://api.supercarl.ai/mcp"
+    }
+  }
+}
